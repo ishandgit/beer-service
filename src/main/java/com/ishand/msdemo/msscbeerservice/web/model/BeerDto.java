@@ -1,5 +1,6 @@
 package com.ishand.msdemo.msscbeerservice.web.model;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
@@ -20,8 +21,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 
-public class BeerDto {
+public class BeerDto implements Serializable {
 
+	static final long serialVersionUID = -5815566940065181210L;
 	@Null
 	private UUID id;
 	@Null
