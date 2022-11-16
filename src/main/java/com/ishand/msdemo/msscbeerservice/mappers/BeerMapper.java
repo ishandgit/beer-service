@@ -8,9 +8,9 @@ import com.ishand.msdemo.msscbeerservice.web.model.BeerDto;
 @Mapper(uses = {DateMapper.class})
 public interface BeerMapper {
 	
-	BeerDto BeerToBeerDto(Beer beer) ;
+	BeerDto beerToBeerDto(Beer beer) ;
 		
 	
 	
-	Beer BeerDtoToBeer(BeerDto dto) ;
+	Beer beerDtoToBeer(BeerDto dto) ;
 }
